@@ -42,13 +42,10 @@ class Family extends BackendController
 	->where('id','=',$familyGroup['0']->secondUserID)
 	->get();
 
-
-	
-
 	//pr($arrayobj['0']->username);exit;
 
-		return $this->getView()
-		->with('user', $user)
+		return View::make('Admin/Family/index')
+			->with('user', $user)
             ->shares('title',  __d('family', 'Family Management'))
             ->shares('familyGroup',$familyGroup)
             ->shares('arrayobj',$arrayobj);

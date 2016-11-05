@@ -25,7 +25,7 @@ class My extends BackendController
 		->where('id','=',$user->id)
 		->get();
 		//pr($myuser);exit;
-		return $this->getView()
+		return View::make('Admin/My/index')
 			->with('user', $user)
             ->shares('title',  __d('family', 'My Profile'))
             ->shares('myuser',$myuser);

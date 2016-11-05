@@ -150,7 +150,7 @@
                         <div class='btn-group' role='group' aria-label='...'>
                             <a class='btn btn-sm btn-warning' href='<?php echo site_url('admin/forms/'.$form->id)?>' title='". __d('users', 'Show the Details') ."' role='button'><i class='fa fa-search'></i></a>
                             <a class='btn btn-sm btn-success' href='#' title='" .__d('users', 'Edit this User') ."' role='button'><i class='fa fa-pencil'></i></a>
-                            <a class='btn btn-sm btn-danger' href='#' data-toggle='modal' data-target='#confirm_<?php echo $form->id;?>' title='" .__d('users', 'Delete this Form') ."' role='button'><i class='fa fa-remove'></i></a>
+                            <a class='btn btn-sm btn-danger' href='#' data-toggle='modal' data-target='#confirm_<?php echo $form->id;?>' title='" .__d('users', 'Reject this Form') ."' role='button'><i class='fa fa-remove'></i></a>
                         </div>
                     </td>
                 </tr>
@@ -172,17 +172,17 @@ if (! $forms->isEmpty()) {
             <div class="modal-header">
                 <button aria-label="Close" data-dismiss="modal" class="close" type="button">
                 <span aria-hidden="true">×</span></button>
-                <h4 class="modal-title"><?= __d('forms', 'Delete the Form?'); ?></h4>
+                <h4 class="modal-title"><?= __d('forms', 'Reject the Form?'); ?></h4>
             </div>
             <div class="modal-body">
-                <p><?= __d('forms', 'Are you sure you want to delete the Form <b>{0}</b>, the operation being irreversible?', $form->name); ?></p>
-                <p><?= __d('forms', 'Please click the button <b>Delete the Form</b> to proceed, or <b>Cancel</b> to abandon the operation.'); ?></p>
+                <p><?= __d('forms', 'Are you sure you want to reject the Form <b>{0}</b>, the operation being irreversible?', $form->name); ?></p>
+                <p><?= __d('forms', 'Please click the button <b>Reject the Form</b> to proceed, or <b>Cancel</b> to abandon the operation.'); ?></p>
             </div>
             <div class="modal-footer">
                 <button data-dismiss="modal" class="btn btn-primary pull-left col-md-3" type="button"><?= __d('users', 'Cancel'); ?></button>
                 <form action="<?= site_url('admin/forms/' .$form->id .'/destroy'); ?>" method="POST">
                     <input type="hidden" name="csrfToken" value="<?= $csrfToken; ?>" />
-                    <input type="submit" name="button" class="btn btn btn-danger pull-right" value="<?= __d('users', 'Delete the User'); ?>">
+                    <input type="submit" name="button" class="btn btn btn-danger pull-right" value="<?= __d('users', 'Reject the User'); ?>">
                 </form>
             </div>
         </div>
