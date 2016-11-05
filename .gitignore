@@ -1,0 +1,43 @@
+bin/js/node_modules
+
+app/Model/AppModel.php
+
+app/tmp/logs
+app/tmp/logs/*
+app/tmp/cache
+app/tmp/sessions
+app/Config/database.php
+app/webroot/img/data
+config/vhosts
+tasks/cron_stats.php
+sql/*sql
+sql/*7z
+sql/*gz
+sql/*
+
+bin/cron/stat
+bin/dump.sql
+empty
+*.swo
+*.swp
+manage
+.idea
+scm/templates_c/*
+scm/cache/*
+.DS_Store
+app/webroot/img/brands/*
+app/webroot/img/deals/*
+app/tmp/original_images/*
+app/webroot/img/collections/*
+app/webroot/img/events/*
+
+# Ignore uploaded Images, Videos and Files
+app/webroot/videos/*
+!app/webroot/videos/empty
+app/webroot/.tmb/*
+app/webroot/img/.tmb/*
+app/webroot/videos/.tmb/*
+
+# Coupon files
+app/Storage
+#ignore css
