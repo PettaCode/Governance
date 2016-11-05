@@ -35,24 +35,24 @@ Additionally, installing in a sub-directory, on a production server, will introd
 ## Regular User Password : 
 User Name : john
 pass : john
-Uses -> Reqular User ,Access to his profile,list of family members
+Uses -> Regular User, Access to his profile,list of family members
 
 ## Admin
 user : admin
 pass : admin
 uses -> report checking ,user creation,form view,system setting,server files
 
-## employe
+## Employee
 user : marcus
 pass : marcus
 uses -> form checking ,profile,user creation
 
 Please setup the virtual server to run this project properly
 
-Please locate the db file in Script folder
+Please locate the DB file in Script folder
 
 
 
 Front Side :
 
-front side is basicaly navigate to the services that will push to the backend of the system.
+front side is basically navigated to the services that will push to the backend of the system.
