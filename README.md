@@ -42,7 +42,7 @@ user : admin
 pass : admin
 uses -> report checking ,user creation,form view,system setting,server files
 
-## employe
+## Employee
 user : marcus
 pass : marcus
 uses -> form checking ,profile,user creation
